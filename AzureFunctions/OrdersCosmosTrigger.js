@@ -10,6 +10,7 @@
 module.exports = function (context, newOrders) {
 	for(var i=0; i < newOrders.length; i++) {
 		var newOrder = newOrders[i];
+		console.log('asdasdas')
 		var orderId = newOrder['$v']['id']['$v'];
 		var userId = newOrder['$v']['userId']['$v'];
 		var sendNotification = newOrder['$v']['sendNotification']['$v'];
